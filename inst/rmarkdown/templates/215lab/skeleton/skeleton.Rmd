@@ -1,0 +1,70 @@
+---
+title: "Lab X"
+subtitle: "Statistics 215A - Statistical Models: Theory and Application"
+author: "Andy Shen"
+date: "UC Berkeley, Fall 2021"
+header-includes:
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{amsthm}
+  - \usepackage{bm}
+  - \usepackage{float}
+  - \usepackage{hyperref}
+  - \usepackage{setspace}
+output: 
+  pdf_document:
+    includes:
+      in_header: header210.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+\setstretch{1.5}
+
+
+Write some stuff here for your lab report!!
+
+Don't forget to use the **PCS Framework**!
+
+1) Domain problem formulation (narrative). Clearly state the real-world question and describe prior work related to this question. Indicate how this question can be answered in the context of a model or analysis.
+
+2) Data collection and storage (narrative). Describe how the data were generated, including experimental design principles, and reasons why the data are relevant to answer the domain question. Describe where data are stored and how they can be accessed by others.
+
+3) Data cleaning and preprocessing (narrative, code, visualization). Describe and justify steps to convert raw data into data for analysis. Ask whether more than one preprocessing method should be used and examine their impacts on the final data results.
+
+4) Exploratory data analysis (narrative, code, visualization). Describe any preliminary analyses that influenced modeling decisions or conclusions along with code and visualizations to support these decisions.
+
+5) Modeling and post hoc analysis (narrative, code, visualization). Carry out PCS inference in the context of the domain question. Specify appropriate model and data perturbations. If necessary, specify null hypotheses and associated perturbations.
+
+6) Interpretation of results (narrative and visualization). Translate the data results to draw conclusions and/or make recommendations in the context of the domain problem.
+
+## Extra Placeholder Stuff (delete)
+
+An estimator $\delta^*(x)$ strictly dominates another estimator $\delta$ if:
+
+\begin{align*}
+R(\theta, \delta^*) \leq R(\theta, \delta), \forall \theta \in \Omega, \\
+R(\theta, \delta^*) < R(\theta, \delta), \text{ for some } \theta \in \Omega.
+\end{align*}
+
+$\delta$ is considered **inadmissible** if there exists a  different $\delta^*$ that dominates it.
+
+Otherwise, $\delta$ is **admissible**.
+
+
+
+\begin{align*}
+X \simiid N(\mu, \sigma^2)
+\end{align*}
+
+
+\begin{align*}
+\cg \\
+\ind{[x \leq 3]}\\
+\var(X + Y) = \var(X) + \var(Y) + 2\cov(X, Y)\\
+\sign{x}\\
+\law{X}
+\end{align*}
+

@@ -1,0 +1,121 @@
+---
+title: "Homework X"
+subtitle: "Statistics 210A: Theoretical Statistics"
+author: "Andy Shen"
+date: "UC Berkeley, Fall 2021"
+header-includes:
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{amsthm}
+  - \usepackage{bm}
+  - \usepackage{float}
+  - \usepackage{hyperref}
+  - \usepackage{setspace}
+output: 
+  pdf_document:
+    includes:
+      in_header: header210.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+\setstretch{1.5}
+
+
+# Problem 1
+
+
+An estimator $\delta^*(x)$ strictly dominates another estimator $\delta$ if:
+
+\begin{align*}
+R(\theta, \delta^*) \leq R(\theta, \delta), \forall \theta \in \Omega, \\
+R(\theta, \delta^*) < R(\theta, \delta), \text{ for some } \theta \in \Omega.
+\end{align*}
+
+$\delta$ is considered **inadmissible** if there exists a  different $\delta^*$ that dominates it.
+
+Otherwise, $\delta$ is **admissible**.
+
+
+
+\begin{align*}
+X \simiid N(\mu, \sigma^2)
+\end{align*}
+
+
+\pagebreak
+
+# Problem 2
+
+
+\begin{align*}
+\cg \\
+\ind{[x \leq 3]}\\
+\var(X + Y) = \var(X) + \var(Y) + 2\cov(X, Y)\\
+\sign{x}\\
+\law{X}
+\end{align*}
+
+
+
+
+
+\pagebreak
+
+# Problem 3
+
+
+An estimator $\delta^*(x)$ strictly dominates another estimator $\delta$ if:
+
+\begin{align*}
+R(\theta, \delta^*) \leq R(\theta, \delta), \forall \theta \in \Omega, \\
+R(\theta, \delta^*) < R(\theta, \delta), \text{ for some } \theta \in \Omega.
+\end{align*}
+
+$\delta$ is considered **inadmissible** if there exists a  different $\delta^*$ that dominates it.
+
+Otherwise, $\delta$ is **admissible**.
+
+
+
+\pagebreak
+
+# Problem 4
+
+An estimator $\delta^*(x)$ strictly dominates another estimator $\delta$ if:
+
+\begin{align*}
+R(\theta, \delta^*) \leq R(\theta, \delta), \forall \theta \in \Omega, \\
+R(\theta, \delta^*) < R(\theta, \delta), \text{ for some } \theta \in \Omega.
+\end{align*}
+
+$\delta$ is considered **inadmissible** if there exists a  different $\delta^*$ that dominates it.
+
+Otherwise, $\delta$ is **admissible**.
+
+
+
+
+
+\pagebreak
+
+# Problem 5
+
+
+
+An estimator $\delta^*(x)$ strictly dominates another estimator $\delta$ if:
+
+\begin{align*}
+R(\theta, \delta^*) \leq R(\theta, \delta), \forall \theta \in \Omega, \\
+R(\theta, \delta^*) < R(\theta, \delta), \text{ for some } \theta \in \Omega.
+\end{align*}
+
+$\delta$ is considered **inadmissible** if there exists a  different $\delta^*$ that dominates it.
+
+Otherwise, $\delta$ is **admissible**.
+
+
+
+
