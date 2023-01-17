@@ -1,44 +1,43 @@
 ---
-title: "Lab X"
-subtitle: "Statistics 215A - Statistical Models: Theory and Application"
+title: "Lab 4: Cloud Detection Classification"
+subtitle: "Statistics 215B - Statistical Models: Theory and Application"
 author: "Andy Shen"
-date: "UC Berkeley, Fall 2021"
 header-includes:
-  - \usepackage{amsmath}
-  - \usepackage{amssymb}
-  - \usepackage{amsthm}
-  - \usepackage{bm}
-  - \usepackage{float}
-  - \usepackage{hyperref}
-  - \usepackage{setspace}
+   - \usepackage{float}
+   - \usepackage{bbm}
 output: 
-  pdf_document
+  pdf_document:
+    number_sections: true
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+rm(list = ls())
+library(tidyverse)
+library(magick)
+library(patchwork)
+library(GGally)
+library(car)
+library(reshape2)
+library(cvms)
+library(ggpubr)
+library(e1071)
+library(kableExtra)
+library(knitr)
+library(caret)
+library(pROC)
+knitr::opts_chunk$set(
+  echo = FALSE,  # don't print the code chunk
+  warning = FALSE,  # don't print warnings
+  message = FALSE,  # don't print messages
+  fig.width = 6,  # set default width of figures
+  fig.height = 4,  # set default height of figures
+  fig.align = "center",  # always align figure in center
+  fig.pos = "H",  # always plot figure at the exact location of the code chunk
+  cache = FALSE,
+  dev = "jpeg",
+  dpi = 400) 
 ```
-
-\setstretch{1.0}
-
-
-Write some stuff here for your lab report!!
-
-Don't forget to use the **PCS Framework**!
-
-1) Domain problem formulation (narrative). Clearly state the real-world question and describe prior work related to this question. Indicate how this question can be answered in the context of a model or analysis.
-
-2) Data collection and storage (narrative). Describe how the data were generated, including experimental design principles, and reasons why the data are relevant to answer the domain question. Describe where data are stored and how they can be accessed by others.
-
-3) Data cleaning and preprocessing (narrative, code, visualization). Describe and justify steps to convert raw data into data for analysis. Ask whether more than one preprocessing method should be used and examine their impacts on the final data results.
-
-4) Exploratory data analysis (narrative, code, visualization). Describe any preliminary analyses that influenced modeling decisions or conclusions along with code and visualizations to support these decisions.
-
-5) Modeling and post hoc analysis (narrative, code, visualization). Carry out PCS inference in the context of the domain question. Specify appropriate model and data perturbations. If necessary, specify null hypotheses and associated perturbations.
-
-6) Interpretation of results (narrative and visualization). Translate the data results to draw conclusions and/or make recommendations in the context of the domain problem.
-
-
 
 
 
